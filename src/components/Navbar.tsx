@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { navLinks } from "../constants";
+import { navLinks, user } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
@@ -30,7 +30,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-primary"
+        scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
       <div className="w-full flex justify-between items-center  mx-auto">
@@ -44,8 +44,10 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Gavin &nbsp;
-            <span className="sm:block hidden"> D'mello</span>
+            {user.portfolio_primary_title} &nbsp;
+            <span className="sm:block hidden">
+              {user.portfolio_secondary_title}
+            </span>
           </p>
         </Link>
 

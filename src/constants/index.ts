@@ -40,6 +40,17 @@ export const navLinks = [
   },
 ];
 
+const user = {
+  first_name: "Gavin",
+  last_name: "D'mello",
+  portfolio_primary_title: "Gavin",
+  portfolio_secondary_title: "D'mello",
+  about_me_slogan:
+    "I develop highly responsive full-stack web and mobile aplications",
+  about_me_description:
+    "I am a Software Developer with 3+ years of experience in software development, debugging and testing. Proficient in building full-stack web and mobile applications, with expertise in UI/UX, Database and System Designs. Highly skilled in Javascript, TypeScript, Java and SQL, as well as using frameworks like React, Node.js, Postgres and MongoDB. Adept in Agile practices and team collaboration, with a strong focus on continuous improvement.",
+};
+
 const services = [
   {
     title: "Web Developer",
@@ -264,4 +275,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { user, services, technologies, experiences, testimonials, projects };
