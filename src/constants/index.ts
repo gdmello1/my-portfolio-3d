@@ -130,19 +130,20 @@ const experiences = [
     title: "Student Software Developer - Web Developer",
     company_name: "Don Bosco Institute of Technology, Mumbai",
     icon: dbit,
-    iconBg: "#383E56",
+    iconBg: "#050816",
     date: "January 2017 - October 2017",
     points: [
       "Worked on a live project named DBJSE and learned the use of Blade(a tool for the front end and integration of the system).",
       "Developed 70% of the CRUD API in ExpressJS with CORS support and Origin and Proxy Validations to achieve a secure backend.",
       "Conducted unit testing of APIs using Postman, and tracked project status using GitHub",
     ],
+    url: "https://www.dbit.in/",
   },
   {
     title: "Software Development Engineer",
     company_name: "Zaya Learning Labs",
     icon: zaya,
-    iconBg: "#E6DEDD",
+    iconBg: "#050816",
     date: "July 2019 - February 2021",
     points: [
       "Achieved business growth by developing product(web and mobile) prototypes and presenting demos to potential clients.",
@@ -150,12 +151,14 @@ const experiences = [
       "Improved employee management system’s performance by 58%, by re-engineering existing solutions and using redux.",
       "Guided and supported junior developers on bug resolution, code comprehension, onboarding, and timeline planning, while providing insights on specific approaches for different cases.",
     ],
+    url: "https://www.zaya.org/",
   },
+
   {
     title: "Full Stack Mobile Engineer",
     company_name: "GetSetUp.io",
     icon: gsu,
-    iconBg: "#383E56",
+    iconBg: "#050816",
     date: "Mar 2021 - Aug 2021",
     points: [
       "Boosted user base to 300% by spearheading the development of comprehensive and engaging mobile features.",
@@ -163,12 +166,13 @@ const experiences = [
       "Implemented exhaustive edge case monitoring and unit testing, which yielded an impressive 95% reduction in errors.",
       "Conducted code reviews and delivered feedback to enhance code quality and ensure adherence to best practices.",
     ],
+    url: "https://www.getsetup.io/",
   },
   {
     title: "Full stack Software Developer | Graduate Assistant",
     company_name: "University of Massachusetts, Dartmouth",
     icon: umd,
-    iconBg: "#E6DEDD",
+    iconBg: "#050816",
     date: "Jan 2022 - Present",
     points: [
       "Reduced API call requests by 43%, using cache configurations and developing bulk and batch endpoints.",
@@ -176,6 +180,7 @@ const experiences = [
       "Leading a team of 4 developers during the full-stack web and mobile app development of NBDT business project",
       "Developing and maintaining Full stack applications using React.js, Node.js and other related technologies.",
     ],
+    url: "https://www.umassd.edu/",
   },
 ];
 

@@ -58,9 +58,15 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => {
+                setActive(nav.title);
+                console.log(nav);
+                document
+                  .getElementById(`${nav.id}`)
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <div>{nav.title}</div>
             </li>
           ))}
         </ul>
