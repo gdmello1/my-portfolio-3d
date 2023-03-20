@@ -24,8 +24,20 @@ import {
   tripguide,
   threejs,
 } from "../assets";
+import {
+  Experience,
+  Service,
+  Technology,
+  Testimony,
+  User,
+} from "../configs/types";
 
-export const navLinks = [
+interface NavLink {
+  id: string;
+  title: string;
+}
+
+export const navLinks: NavLink[] = [
   {
     id: "about",
     title: "About",
@@ -40,7 +52,7 @@ export const navLinks = [
   },
 ];
 
-const user = {
+const user: User = {
   first_name: "Gavin",
   last_name: "D'mello",
   portfolio_primary_title: "Gavin",
@@ -51,17 +63,17 @@ const user = {
     "I am a Software Developer with 3+ years of experience in software development, debugging and testing. Proficient in building full-stack web and mobile applications, with expertise in UI/UX, Database and System Designs. Highly skilled in Javascript, TypeScript, Java and SQL, as well as using frameworks like React, Node.js, Postgres and MongoDB. Adept in Agile practices and team collaboration, with a strong focus on continuous improvement.",
 };
 
-const services = [
+const services: Service[] = [
   {
     title: "Web Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Native (Mobile) Developer",
     icon: mobile,
   },
   {
-    title: "Node Developer",
+    title: "Node/Express Developer",
     icon: backend,
   },
   {
@@ -70,7 +82,7 @@ const services = [
   },
 ];
 
-const technologies = [
+const technologies: Technology[] = [
   {
     name: "HTML 5",
     icon: html,
@@ -125,25 +137,26 @@ const technologies = [
   },
 ];
 
-const experiences = [
+const experiences: Experience[] = [
   {
-    title: "Student Software Developer - Web Developer",
+    designation: "Student Software Developer - Web Developer",
     company_name: "Don Bosco Institute of Technology, Mumbai",
     icon: dbit,
-    iconBg: "#050816",
+    iconBg: "#faf6de",
     date: "January 2017 - October 2017",
     points: [
       "Worked on a live project named DBJSE and learned the use of Blade(a tool for the front end and integration of the system).",
       "Developed 70% of the CRUD API in ExpressJS with CORS support and Origin and Proxy Validations to achieve a secure backend.",
       "Conducted unit testing of APIs using Postman, and tracked project status using GitHub",
     ],
+    tech: " Web Development · Unit Testing · RESTful WebServices · Figma (Software) · NoSQL · Git",
     url: "https://www.dbit.in/",
   },
   {
-    title: "Software Development Engineer",
+    designation: "Software Development Engineer",
     company_name: "Zaya Learning Labs",
     icon: zaya,
-    iconBg: "#050816",
+    iconBg: "#def8fa",
     date: "July 2019 - February 2021",
     points: [
       "Achieved business growth by developing product(web and mobile) prototypes and presenting demos to potential clients.",
@@ -151,14 +164,15 @@ const experiences = [
       "Improved employee management system’s performance by 58%, by re-engineering existing solutions and using redux.",
       "Guided and supported junior developers on bug resolution, code comprehension, onboarding, and timeline planning, while providing insights on specific approaches for different cases.",
     ],
+    tech: "TypeScript · Python · Flutter · XML · React-Native · GraphQL · ES6+ · PostgreSQL · OAuth · GitHub Actions · Figma",
     url: "https://www.zaya.org/",
   },
 
   {
-    title: "Full Stack Mobile Engineer",
+    designation: "Full Stack Mobile Engineer",
     company_name: "GetSetUp.io",
     icon: gsu,
-    iconBg: "#050816",
+    iconBg: "#ffe6fa",
     date: "Mar 2021 - Aug 2021",
     points: [
       "Boosted user base to 300% by spearheading the development of comprehensive and engaging mobile features.",
@@ -166,13 +180,14 @@ const experiences = [
       "Implemented exhaustive edge case monitoring and unit testing, which yielded an impressive 95% reduction in errors.",
       "Conducted code reviews and delivered feedback to enhance code quality and ensure adherence to best practices.",
     ],
+    tech: "Javascript · Node.js · Java · React · React Native · Relational databases · CI/CD · Postgres · Git · XML",
     url: "https://www.getsetup.io/",
   },
   {
-    title: "Full stack Software Developer | Graduate Assistant",
+    designation: "Full stack Software Developer | Graduate Assistant",
     company_name: "University of Massachusetts, Dartmouth",
     icon: umd,
-    iconBg: "#050816",
+    iconBg: "#d4d9fa",
     date: "Jan 2022 - Present",
     points: [
       "Reduced API call requests by 43%, using cache configurations and developing bulk and batch endpoints.",
@@ -180,11 +195,12 @@ const experiences = [
       "Leading a team of 4 developers during the full-stack web and mobile app development of NBDT business project",
       "Developing and maintaining Full stack applications using React.js, Node.js and other related technologies.",
     ],
+    tech: "TypeScript · NoSql · Express.js · React.js · React Native · D3.js · AWS S3 · GitHub · Material-UI · RESTful APIs",
     url: "https://www.umassd.edu/",
   },
 ];
 
-const testimonials = [
+const testimonials: Testimony[] = [
   {
     testimonial:
       "I have never met someone like Gavin, with such a keen interest in software development and vision for application design. He is very dedicated to his work.",

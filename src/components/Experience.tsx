@@ -11,8 +11,13 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { textVariant } from "../utils/motion";
+import { Experience as ExperienceTypes } from "../configs/types";
 
-const ExperienceCard = ({ experience }) => {
+interface ExperienceCardProps {
+  experience: ExperienceTypes;
+}
+
+const ExperienceCard = ({ experience }: ExperienceCardProps) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -29,7 +34,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className="w-[70%] h-[70%] object-contain main-img"
+            className="w-[72%] h-[72%] object-contain main-img"
           />
           <img
             src={open}
@@ -38,10 +43,12 @@ const ExperienceCard = ({ experience }) => {
           />
         </div>
       }
-      iconOnClick={() => window.open(experience.url, "Experience")}
+      iconOnClick={() => window.open(experience.url)}
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-white text-[24px] font-bold">
+          {experience.designation}
+        </h3>
         <p
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
@@ -49,6 +56,10 @@ const ExperienceCard = ({ experience }) => {
           {experience.company_name}
         </p>
       </div>
+      <text className=" text-wrap text-pink-500 text-[14px] flex-1">
+        {" "}
+        {experience.tech}
+      </text>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
         {experience.points.map((point, index) => (

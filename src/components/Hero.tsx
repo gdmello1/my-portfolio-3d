@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { user } from "../constants";
+import { User } from "../configs/types";
 
 const Hero = () => {
   const aboutStringSplit =
@@ -44,8 +45,10 @@ const Hero = () => {
         <div
           className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2"
           onClick={() =>
+            document &&
+            document.getElementById("about") &&
             document
-              .getElementById("about")
+              .getElementById("about")!
               .scrollIntoView({ behavior: "smooth" })
           }
         >

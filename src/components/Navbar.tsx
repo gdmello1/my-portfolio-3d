@@ -11,8 +11,13 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    if (window.scrollY > 0) {
+      setScrolled(true);
+    }
+
     const handleScroll = () => {
       const scrollTop = window.scrollY;
+
       if (scrollTop > 100) {
         setScrolled(true);
       } else {
@@ -60,9 +65,8 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => {
                 setActive(nav.title);
-                console.log(nav);
                 document
-                  .getElementById(`${nav.id}`)
+                  .getElementById(`${nav.id}`)!
                   .scrollIntoView({ behavior: "smooth" });
               }}
             >
