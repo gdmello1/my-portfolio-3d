@@ -3,7 +3,6 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import open from "./open.png";
-
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -21,6 +20,9 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import sql from "./tech/sql.png";
+import graphql from "./tech/graphql.png";
+import reactnative from "./tech/reactnative.png";
 import threejs from "./tech/threejs.svg";
 
 import umd from "./company/umd.png";
@@ -55,6 +57,9 @@ export {
   tailwind,
   typescript,
   threejs,
+  graphql,
+  reactnative,
+  sql,
   gsu,
   zaya,
   umd,

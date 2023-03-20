@@ -23,6 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  graphql,
+  reactnative,
+  sql,
 } from "../assets";
 import {
   Experience,
@@ -108,6 +111,10 @@ const technologies: Technology[] = [
     icon: redux,
   },
   {
+    name: "React Native",
+    icon: reactnative,
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -120,8 +127,16 @@ const technologies: Technology[] = [
     icon: mongodb,
   },
   {
+    name: "SQL",
+    icon: sql,
+  },
+  {
     name: "Three JS",
     icon: threejs,
+  },
+  {
+    name: "GraphQL",
+    icon: graphql,
   },
   {
     name: "git",
