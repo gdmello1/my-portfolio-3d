@@ -19,16 +19,12 @@ import {
   gsu,
   dbit,
   zaya,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
-  graphql,
   reactnative,
   sql,
 } from "../assets";
 import {
   Experience,
+  Project,
   Service,
   Technology,
   Testimony,
@@ -48,6 +44,10 @@ export const navLinks: NavLink[] = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "project",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -130,14 +130,7 @@ const technologies: Technology[] = [
     name: "SQL",
     icon: sql,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "GraphQL",
-    icon: graphql,
-  },
+
   {
     name: "git",
     icon: git,
@@ -218,7 +211,7 @@ const experiences: Experience[] = [
 const testimonials: Testimony[] = [
   {
     testimonial:
-      "I have never met someone like Gavin, with such a keen interest in software development and vision for application design. He is very dedicated to his work.",
+      "I've never encountered anyone like him, who possesses both an insatiable passion for software development and a remarkable vision for application design.",
     name: "Amir Akhavan Misouri",
     designation: "Professor",
     company: "University of Massachusetts",
@@ -236,7 +229,7 @@ const testimonials: Testimony[] = [
   },
   {
     testimonial:
-      "Gavin is undoubtedly an excellent engineer. I particularly appreciated his incredible attention to detail, enduring emphasis on quality, and always attempting a pixel perfect UI be it webapp or mobile app.",
+      "He is an exceptional engineer with an unwavering focus on quality and pixel-perfect UIs for web and mobile apps.",
     name: "Deepak Singh",
     designation: "Engineering Lead",
     company: "Zaya Learning Labs",
@@ -245,9 +238,9 @@ const testimonials: Testimony[] = [
   },
 ];
 
-const projects = [
+const projects: Project[] = [
   {
-    name: "Food Blog",
+    name: "3D Portfolio",
     description:
       "A visually appealing and informative food blog website that offers a wide range of recipes, cooking techniques, and food-related content to inspire and educate food lovers.",
     tags: [
@@ -256,19 +249,21 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "threejs",
         color: "green-text-gradient",
       },
       {
-        name: "bootstrap",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image:
+      "https://ik.imagekit.io/kayo3vdtw/3d-portfolio/projects/Screenshot_2023-03-20_at_1.32.17_AM.png?updatedAt=1679290366079",
     source_code_link: "https://github.com/",
+    live_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Blogica",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -284,12 +279,19 @@ const projects = [
         name: "scss",
         color: "pink-text-gradient",
       },
+      {
+        name: "mongodb",
+        color: "orange-text-gradient",
+      },
     ],
-    image: jobit,
+    image:
+      "https://ik.imagekit.io/kayo3vdtw/3d-portfolio/projects/Screenshot_2023-03-20_at_1.27.59_AM.png?updatedAt=1679290165657",
+
     source_code_link: "https://github.com/",
+    live_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Recipe Diary",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -306,8 +308,10 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image:
+      "https://ik.imagekit.io/kayo3vdtw/3d-portfolio/projects/Screenshot_2023-03-20_at_1.40.12_AM.png?updatedAt=1679290834218",
     source_code_link: "https://github.com/",
+    live_link: "https://github.com/",
   },
 ];
 

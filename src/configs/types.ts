@@ -47,9 +47,18 @@ export interface Project {
   tags: Tag[];
   image: string;
   source_code_link: string;
+  live_link?: string;
 }
 
 export interface Tag {
   name: string;
   color: string;
+}
+
+export interface Testimony {
+  testimonial: string;
+  name: string;
+  designation: string;
+  company: string;
+  image: string;
 }

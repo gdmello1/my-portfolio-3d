@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import open from "./open.png";
 import web from "./web.png";
+import webapp from "./webapp.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -30,10 +31,6 @@ import zaya from "./company/zaya.png";
 import gsu from "./company/gsu.png";
 import dbit from "./company/dbit.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 export {
   logo,
   backend,
@@ -48,6 +45,7 @@ export {
   docker,
   figma,
   git,
+  webapp,
   html,
   javascript,
   mongodb,
@@ -64,7 +62,4 @@ export {
   zaya,
   umd,
   dbit,
-  carrent,
-  jobit,
-  tripguide,
 };
