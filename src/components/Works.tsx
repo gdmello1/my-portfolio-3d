@@ -24,10 +24,10 @@ const ProjectCard = ({
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className=" w-[100%] xs:w-[80%] sm:w-[46%] lg:w-[31%] m-0 "
+      className="xs:flex w-[100%] xs:w-[80%] sm:w-[46%] lg:w-[31%] m-0 "
     >
-      <Tilty>
-        <div className="bg-tertiary p-5 rounded-2xl">
+      <Tilty className="flex-1 flex">
+        <div className="flex-1 bg-tertiary p-5 rounded-2xl">
           <div className="relative h-[200px] xs:h-[200px] sm:h-[160px] md:h-[180px] lg:h-[180px] xl:h-[240px]">
             <img
               src={image}
@@ -113,9 +113,8 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-row flex-wrap justify-start gap-[30px]">
+      <div className="mt-20 flex items-stretch flex-wrap  gap-[30px] ">
         {projects.map((project, index) => (
-          // <div className="h-[20px] bg-indigo-500 w-[100%] sm:w-[30%]"></div>
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>

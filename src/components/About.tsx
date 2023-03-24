@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Tilty from "react-tilty";
 import { motion } from "framer-motion";
 

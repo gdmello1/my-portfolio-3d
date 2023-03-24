@@ -56,10 +56,10 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
           {experience.company_name}
         </p>
       </div>
-      <text className=" text-wrap text-pink-500 text-[14px] flex-1">
+      <span className=" text-wrap text-pink-500 text-[14px] flex-1">
         {" "}
         {experience.tech}
-      </text>
+      </span>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
         {experience.points.map((point, index) => (
