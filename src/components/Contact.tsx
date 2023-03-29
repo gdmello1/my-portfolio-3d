@@ -27,22 +27,28 @@ const Contact = () => {
     });
   };
 
+  // template_un3dtnm
+  // service_tr9ho9e;
+  // b7lsPH9mY34 - jcRHB;
+
   const handleSubmit = (e: any) => {
+    console.log("Here", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
     e.preventDefault();
     setLoading(false);
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Gavin D'mello",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "gavindmello1997@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -123,7 +129,7 @@ const Contact = () => {
           </label>
 
           <button
-            disabled={isDisabled}
+            // disabled={isDisabled}
             type="submit"
             className={`${
               isDisabled ? "bg-stone-400" : "bg-tertiary"

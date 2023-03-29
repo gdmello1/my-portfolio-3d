@@ -126,10 +126,6 @@ const technologies: Technology[] = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "SQL",
-    icon: sql,
-  },
 
   {
     name: "git",
