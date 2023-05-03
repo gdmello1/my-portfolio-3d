@@ -255,8 +255,8 @@ const projects: Project[] = [
     ],
     image:
       "https://ik.imagekit.io/kayo3vdtw/3d-portfolio/projects/Screenshot_2023-03-20_at_1.32.17_AM.png?updatedAt=1679290366079",
-    source_code_link: "https://github.com/",
-    live_link: "https://github.com/",
+    source_code_link: "https://github.com/eliterudy/my-portfolio-3d",
+    live_link: "https://gavin-dmello-portfolio-3d.netlify.app/",
   },
   {
     name: "Blogica",
@@ -283,8 +283,8 @@ const projects: Project[] = [
     image:
       "https://ik.imagekit.io/kayo3vdtw/3d-portfolio/projects/Screenshot_2023-03-20_at_1.27.59_AM.png?updatedAt=1679290165657",
 
-    source_code_link: "https://github.com/",
-    live_link: "https://github.com/",
+    source_code_link: "https://github.com/eliterudy/blogica",
+    live_link: "https://blogica.netlify.app/",
   },
   {
     name: "Recipe Diary",
@@ -306,8 +306,8 @@ const projects: Project[] = [
     ],
     image:
       "https://ik.imagekit.io/kayo3vdtw/3d-portfolio/projects/Screenshot_2023-03-20_at_1.40.12_AM.png?updatedAt=1679290834218",
-    source_code_link: "https://github.com/",
-    live_link: "https://github.com/",
+    source_code_link: "https://github.com/eliterudy/recipe-diary-frontend",
+    live_link: "https://eliterudy.github.io/recipe-diary-frontend/",
   },
 ];
 

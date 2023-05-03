@@ -58,6 +58,7 @@ const ProjectCard = ({
               </h3>
               {live_link && live_link.length > 0 && (
                 <button
+                  onClick={() => window.open(live_link, "_blank")}
                   style={{
                     backgroundColor: "rgba(28, 37, 79, 0.8)",
                     border: "3px solid rgba(255,255,255,0.02)",
