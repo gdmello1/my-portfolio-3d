@@ -56,7 +56,7 @@ const ProjectCard = ({
               <h3 className="flex-1 break-all text-white font-bold text-[24px]">
                 {name}
               </h3>
-              {live_link && live_link.length > 0 && (
+<!--               {live_link && live_link.length > 0 && (
                 <button
                   onClick={() => window.open(live_link, "_blank")}
                   style={{
@@ -72,7 +72,7 @@ const ProjectCard = ({
                   />
                   <span style={{ color: "#FC573B" }}>Live</span>
                 </button>
-              )}
+              )} -->
             </div>
             <p className="mt-2 text-secondary text-[14px]">{description}</p>
           </div>
