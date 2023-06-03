@@ -238,7 +238,7 @@ const projects: Project[] = [
   {
     name: "3D Portfolio",
     description:
-      "A visually appealing and informative food blog website that offers a wide range of recipes, cooking techniques, and food-related content to inspire and educate food lovers.",
+      "A portfolio template website with support of ThreeJS and powered by React, Redux and Tailwind CSS. This super animated 3d portfolio website template is most useful for users looking to showcase their skills, projects, work experiences. In addition this template also allows prospective hiring managers to reach out to you via the Contact Me Form(emailjs account required for this feature).",
     tags: [
       {
         name: "react",
@@ -261,7 +261,7 @@ const projects: Project[] = [
   {
     name: "Blogica",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A responsive mobile applications that allows its users to create and share content in the tech domain. This website is a great source for tech geniuses to share their knowledege and earn for thier time and efforts as well as for early professionals looking to grow their knowledge base. ",
     tags: [
       {
         name: "react",
@@ -289,7 +289,7 @@ const projects: Project[] = [
   {
     name: "Recipe Diary",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A visually appealing and informative food blog website that offers a wide range of recipes, cooking techniques, and food-related content to inspire and educate food lovers.",
     tags: [
       {
         name: "nextjs",
