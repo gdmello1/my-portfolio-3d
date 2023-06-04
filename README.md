@@ -1,5 +1,5 @@
 
-![alt text](https://github.com/GavinDmello97/my-portfolio/blob/master/public/logo192.png "Logo Title Text 1")
+![LOGO](https://github.com/eliterudy/my-portfolio-3d/blob/main/src/assets/logo.png){: width="30"}
 
 # My 3D Portfolio Template
 
