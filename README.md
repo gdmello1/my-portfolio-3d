@@ -1,5 +1,5 @@
 
-![LOGO](https://github.com/eliterudy/my-portfolio-3d/blob/main/src/assets/logo.png){: width="30"}
+<img src="https://github.com/eliterudy/my-portfolio-3d/blob/main/src/assets/logo.png" width="150" height="150">
 
 # My 3D Portfolio Template
 
