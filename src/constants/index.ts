@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import {
   mobile,
   backend,
@@ -7,20 +8,24 @@ import {
   typescript,
   html,
   css,
+  nestjs,
+  postgres,
+  angular,
   reactjs,
   redux,
   tailwind,
   nodejs,
   mongodb,
+  reactnative,
+  sql,
   git,
-  figma,
+  aws,
   docker,
   umd,
   gsu,
   dbit,
   zaya,
-  reactnative,
-  sql,
+  moderna,
 } from "../assets";
 import {
   Experience,
@@ -63,7 +68,7 @@ const user: User = {
   about_me_slogan:
     "I develop highly responsive full-stack web and mobile aplications",
   about_me_description:
-    "I am a Software Developer with 3+ years of experience in software development, debugging and testing. Proficient in building full-stack web and mobile applications, with expertise in UI/UX, Database and System Designs. Highly skilled in Javascript, TypeScript, Java and SQL, as well as using frameworks like React, Node.js, Postgres and MongoDB. Adept in Agile practices and team collaboration, with a strong focus on continuous improvement.",
+    "I am a Software Engineer with 3+ years of experience in software development, debugging and testing. Proficient in building full-stack web and mobile applications, with expertise in UI/UX, Database and System Designs. Highly skilled in Javascript, TypeScript, Java and SQL, as well as using frameworks like React, Angular@15, Node.js, Nest.js, Postgres and MongoDB. Adept in Agile practices and team collaboration, with a strong focus on continuous improvement.",
 };
 
 const services: Service[] = [
@@ -76,7 +81,7 @@ const services: Service[] = [
     icon: mobile,
   },
   {
-    title: "Node/Express Developer",
+    title: "ExpressJs/NestJs",
     icon: backend,
   },
   {
@@ -87,12 +92,12 @@ const services: Service[] = [
 
 const technologies: Technology[] = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "AWS",
+    icon: aws,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "docker",
+    icon: docker,
   },
   {
     name: "JavaScript",
@@ -107,20 +112,28 @@ const technologies: Technology[] = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Angular",
+    icon: angular,
   },
   {
     name: "React Native",
     icon: reactnative,
   },
   {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "NestJs",
+    icon: nestjs,
+  },
+  {
+    name: "Postgres",
+    icon: postgres,
   },
   {
     name: "MongoDB",
@@ -130,14 +143,6 @@ const technologies: Technology[] = [
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -192,7 +197,7 @@ const experiences: Experience[] = [
     company_name: "University of Massachusetts, Dartmouth",
     icon: umd,
     iconBg: "#d4d9fa",
-    date: "Jan 2022 - Present",
+    date: "Jan 2022 - May 2023",
     points: [
       "Reduced API call requests by 43%, using cache configurations and developing bulk and batch endpoints.",
       "Deployed and maintained interfaces and servers of applications like NBDT and FRDT  for seamless and reliable operation.",
@@ -201,6 +206,33 @@ const experiences: Experience[] = [
     ],
     tech: "TypeScript · NoSql · Express.js · React.js · React Native · D3.js · AWS S3 · GitHub · Material-UI · RESTful APIs",
     url: "https://www.umassd.edu/",
+  },
+  {
+    designation: "Software Development Engineer (SDE 1)",
+    company_name: "ModernaTx, Inc.",
+    icon: moderna,
+    iconBg: "#F8FDFF",
+    date: "Jul 2023 - Apr 2024",
+    points: [
+      "Collaborated with a cross-platform team to develop an award-winning P.O.C. app using AI and data warehouse with GPT, enabling stakeholders to make data-driven decisions during business strategy planning and forecasting.",
+      "Increased application reliability by implementing application testing with Jest for unit/integration testing and Cypress for end-to-end testing, resulting in a 30% reduction in bugs and enhanced overall performance.",
+    ],
+    tech: "TypeScript · Angular · Express.js · Postgres · Prisma · GitHub Actions · Jenkins · AWS · Docker · Redis · ElasticSearch",
+    url: "https://www.modernatx.com/en-US",
+  },
+  {
+    designation: "Software Engineer (SDE 2)",
+    company_name: "ModernaTx, Inc.",
+    icon: moderna,
+    iconBg: "#F8FDFF",
+    date: "Apr 2024 - Present",
+    points: [
+      "Led technical discussions in an agile setting, to transform a rigid database structure into a well-defined, scalable schema, enabling seamless integration of new tables and achieving 40% faster onboarding of experimental data.",
+      "Created application evaluation dashboard templates in Dynatrace using AWS CloudWatch logs, uncovering over 1,700 improvement opportunities in database queries, REST APIs, & cloud configs across 60+ in-house applications.",
+      "Reduced cost and time of running CI/CD pipelines and app deployments to AWS ECS by streamlining steps and introducing caching, saving approximately 3,500 hours of computation time annually.",
+    ],
+    tech: "TypeScript · React · Angular · NestJS · Sequelize · AWS (EC2, ECS, Lambda, S3, SNS, SQS, Event-Bridge, etc.)",
+    url: "https://www.modernatx.com/en-US",
   },
 ];
 

@@ -9,6 +9,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import aws from "./tech/aws.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -25,11 +26,15 @@ import sql from "./tech/sql.png";
 import graphql from "./tech/graphql.png";
 import reactnative from "./tech/reactnative.png";
 import threejs from "./tech/threejs.svg";
+import angular from "./tech/angular.png";
+import nestjs from "./tech/nestjs.png";
+import postgres from "./tech/postgres.png";
 
 import umd from "./company/umd.png";
 import zaya from "./company/zaya.png";
 import gsu from "./company/gsu.png";
 import dbit from "./company/dbit.png";
+import moderna from "./company/moderna.png";
 
 export {
   logo,
@@ -39,6 +44,8 @@ export {
   open,
   web,
   github,
+  aws,
+  angular,
   menu,
   close,
   css,
@@ -53,6 +60,8 @@ export {
   reactjs,
   redux,
   tailwind,
+  nestjs,
+  postgres,
   typescript,
   threejs,
   graphql,
@@ -62,4 +71,5 @@ export {
   zaya,
   umd,
   dbit,
+  moderna,
 };
