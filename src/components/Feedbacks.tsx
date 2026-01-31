@@ -36,12 +36,6 @@ const FeedbackCard = ({
             {designation} of {company}
           </p>
         </div>
-
-        <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          className="w-10 h-10 rounded-full object-cover"
-        />
       </div>
     </div>
   </motion.div>

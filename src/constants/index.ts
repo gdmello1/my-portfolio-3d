@@ -68,7 +68,7 @@ const user: User = {
   about_me_slogan:
     "I develop highly responsive full-stack web and mobile aplications",
   about_me_description:
-    "I am a Software Engineer with 3+ years of experience in software development, debugging and testing. Proficient in building full-stack web and mobile applications, with expertise in UI/UX, Database and System Designs. Highly skilled in Javascript, TypeScript, Java and SQL, as well as using frameworks like React, Angular@15, Node.js, Nest.js, Postgres and MongoDB. Adept in Agile practices and team collaboration, with a strong focus on continuous improvement.",
+    "Full-Stack Software Engineer with 5+ years of experience building and scaling production systems that don’t fall apart under real-world load. My arsenal includes JavaScript, TypeScript, Python, and Java, with hands-on experience designing backend-heavy architectures, APIs, data pipelines, and modern web applications using Node.js, NestJS, React, and Angular. I’m known for untangling complex systems, modernizing legacy codebases, and taking strong ownership from design to production, with a constant focus on reliability, maintainability, and scale. I thrive in fast-paced environments, think in systems, and continuously push myself toward stronger architecture and distributed systems mastery.",
 };
 
 const services: Service[] = [
@@ -148,49 +148,35 @@ const technologies: Technology[] = [
 
 const experiences: Experience[] = [
   {
-    designation: "Student Software Developer - Web Developer",
-    company_name: "Don Bosco Institute of Technology, Mumbai",
-    icon: dbit,
-    iconBg: "#faf6de",
-    date: "January 2017 - October 2017",
+    designation: "Software Engineer (SDE 2)",
+    company_name: "ModernaTx, Inc.",
+    icon: moderna,
+    iconBg: "#F8FDFF",
+    date: "Apr 2024 - Present",
     points: [
-      "Worked on a live project named DBJSE and learned the use of Blade(a tool for the front end and integration of the system).",
-      "Developed 70% of the CRUD API in ExpressJS with CORS support and Origin and Proxy Validations to achieve a secure backend.",
-      "Conducted unit testing of APIs using Postman, and tracked project status using GitHub",
+      "Architected a unified Benchling database integrating data from 16 legacy systems using Node.js and AWS services, collaborating across teams to establish data governance and ensure cross-department data consistency.",
+      "Established automated data migration and two-way synchronization pipelines using Sequelize migrations, cron jobs, and Benchling APIs to transition 4.8M records from legacy systems into a unified Benchling database.",
+      "Developed a Benchling API proxy using Python and FastAPI to enable legacy systems to perform CRUD operations and access data created directly through the Benchling UI.",
+      "Built a network abstraction layer to dynamically redirect traffic from deprecated legacy applications to the Benchling API layer, eliminating cross-VPC connectors and reducing integration overhead by 90% across 60+ applications.",
     ],
-    tech: " Web Development · Unit Testing · RESTful WebServices · Figma (Software) · NoSQL · Git",
-    url: "https://www.dbit.in/",
+    tech: "TypeScript · React · Angular · NestJS · Sequelize · AWS (EC2, ECS, Lambda, S3, SNS, SQS, Event-Bridge, etc.)",
+    url: "https://www.modernatx.com/en-US",
   },
   {
-    designation: "Software Development Engineer",
-    company_name: "Zaya Learning Labs",
-    icon: zaya,
-    iconBg: "#def8fa",
-    date: "July 2019 - February 2021",
+    designation: "Software Development Engineer (SDE 1)",
+    company_name: "ModernaTx, Inc.",
+    icon: moderna,
+    iconBg: "#F8FDFF",
+    date: "Jul 2023 - Apr 2024",
     points: [
-      "Achieved business growth by developing product(web and mobile) prototypes and presenting demos to potential clients.",
-      "Developed an online assessment and progress tracking system for a high-profile client resulting in a 81% efficiency gain.",
-      "Improved employee management system’s performance by 58%, by re-engineering existing solutions and using redux.",
-      "Guided and supported junior developers on bug resolution, code comprehension, onboarding, and timeline planning, while providing insights on specific approaches for different cases.",
+      "Revamped CI/CD workflows using GitHub Actions, reducing PR cycle time by 68% and boosting release cadence.",
+      "Generated Dynatrace dashboards using SQL to visualize performance bottlenecks, improving system response time and reducing incident detection time by 40%.",
+      "Introduced and set up Jest for unit testing across team-owned services, establishing standardized test practices and improving unit test coverage and code quality.",
+      "Implemented Cypress integration and end-to-end tests for Angular and Node.js applications using Platform team tooling, increasing overall test coverage by over 85% and improving release reliability.",
+      "Authored API documentation, developer guides, and onboarding materials with Swagger and Readme, improving new engineer ramp-up efficiency by 50%.",
     ],
-    tech: "TypeScript · Python · Flutter · XML · React-Native · GraphQL · ES6+ · PostgreSQL · OAuth · GitHub Actions · Figma",
-    url: "https://www.zaya.org/",
-  },
-
-  {
-    designation: "Full Stack Mobile Engineer",
-    company_name: "GetSetUp.io",
-    icon: gsu,
-    iconBg: "#ffe6fa",
-    date: "Mar 2021 - Aug 2021",
-    points: [
-      "Boosted user base to 300% by spearheading the development of comprehensive and engaging mobile features.",
-      "Pitched ideas to improve API security with OAuth 2.0 and use proxy system design to limit access based on credentials.",
-      "Implemented exhaustive edge case monitoring and unit testing, which yielded an impressive 95% reduction in errors.",
-      "Conducted code reviews and delivered feedback to enhance code quality and ensure adherence to best practices.",
-    ],
-    tech: "Javascript · Node.js · Java · React · React Native · Relational databases · CI/CD · Postgres · Git · XML",
-    url: "https://www.getsetup.io/",
+    tech: "TypeScript · Angular · Express.js · Postgres · Prisma · GitHub Actions · Jenkins · AWS · Docker · Redis · ElasticSearch",
+    url: "https://www.modernatx.com/en-US",
   },
   {
     designation: "Full stack Software Developer | Graduate Assistant",
@@ -208,31 +194,48 @@ const experiences: Experience[] = [
     url: "https://www.umassd.edu/",
   },
   {
-    designation: "Software Development Engineer (SDE 1)",
-    company_name: "ModernaTx, Inc.",
-    icon: moderna,
-    iconBg: "#F8FDFF",
-    date: "Jul 2023 - Apr 2024",
+    designation: "Full Stack Mobile Engineer",
+    company_name: "GetSetUp.io",
+    icon: gsu,
+    iconBg: "#ffe6fa",
+    date: "Mar 2021 - Aug 2021",
     points: [
-      "Collaborated with a cross-platform team to develop an award-winning P.O.C. app using AI and data warehouse with GPT, enabling stakeholders to make data-driven decisions during business strategy planning and forecasting.",
-      "Increased application reliability by implementing application testing with Jest for unit/integration testing and Cypress for end-to-end testing, resulting in a 30% reduction in bugs and enhanced overall performance.",
+      "Boosted user base to 300% by spearheading the development of comprehensive and engaging mobile features.",
+      "Pitched ideas to improve API security with OAuth 2.0 and use proxy system design to limit access based on credentials.",
+      "Implemented exhaustive edge case monitoring and unit testing, which yielded an impressive 95% reduction in errors.",
+      "Conducted code reviews and delivered feedback to enhance code quality and ensure adherence to best practices.",
     ],
-    tech: "TypeScript · Angular · Express.js · Postgres · Prisma · GitHub Actions · Jenkins · AWS · Docker · Redis · ElasticSearch",
-    url: "https://www.modernatx.com/en-US",
+    tech: "Javascript · Node.js · Java · React · React Native · Relational databases · CI/CD · Postgres · Git · XML",
+    url: "https://www.getsetup.io/",
   },
   {
-    designation: "Software Engineer (SDE 2)",
-    company_name: "ModernaTx, Inc.",
-    icon: moderna,
-    iconBg: "#F8FDFF",
-    date: "Apr 2024 - Present",
+    designation: "Software Development Engineer",
+    company_name: "Zaya Learning Labs",
+    icon: zaya,
+    iconBg: "#def8fa",
+    date: "July 2019 - February 2021",
     points: [
-      "Led technical discussions in an agile setting, to transform a rigid database structure into a well-defined, scalable schema, enabling seamless integration of new tables and achieving 40% faster onboarding of experimental data.",
-      "Created application evaluation dashboard templates in Dynatrace using AWS CloudWatch logs, uncovering over 1,700 improvement opportunities in database queries, REST APIs, & cloud configs across 60+ in-house applications.",
-      "Reduced cost and time of running CI/CD pipelines and app deployments to AWS ECS by streamlining steps and introducing caching, saving approximately 3,500 hours of computation time annually.",
+      "Achieved business growth by developing product(web and mobile) prototypes and presenting demos to potential clients.",
+      "Developed an online assessment and progress tracking system for a high-profile client resulting in a 81% efficiency gain.",
+      "Improved employee management system’s performance by 58%, by re-engineering existing solutions and using redux.",
+      "Guided and supported junior developers on bug resolution, code comprehension, onboarding, and timeline planning, while providing insights on specific approaches for different cases.",
     ],
-    tech: "TypeScript · React · Angular · NestJS · Sequelize · AWS (EC2, ECS, Lambda, S3, SNS, SQS, Event-Bridge, etc.)",
-    url: "https://www.modernatx.com/en-US",
+    tech: "TypeScript · Python · Flutter · XML · React-Native · GraphQL · ES6+ · PostgreSQL · OAuth · GitHub Actions · Figma",
+    url: "https://www.zaya.org/",
+  },
+  {
+    designation: "Student Software Developer - Web Developer",
+    company_name: "Don Bosco Institute of Technology, Mumbai",
+    icon: dbit,
+    iconBg: "#faf6de",
+    date: "January 2017 - October 2017",
+    points: [
+      "Worked on a live project named DBJSE and learned the use of Blade(a tool for the front end and integration of the system).",
+      "Developed 70% of the CRUD API in ExpressJS with CORS support and Origin and Proxy Validations to achieve a secure backend.",
+      "Conducted unit testing of APIs using Postman, and tracked project status using GitHub",
+    ],
+    tech: " Web Development · Unit Testing · RESTful WebServices · Figma (Software) · NoSQL · Git",
+    url: "https://www.dbit.in/",
   },
 ];
 
@@ -243,17 +246,13 @@ const testimonials: Testimony[] = [
     name: "Amir Akhavan Misouri",
     designation: "Professor",
     company: "University of Massachusetts",
-    image:
-      "https://pxl-umassdedu.terminalfour.net/fit-in/945x600/filters:format(webp)/filters:quality(90)/prod01/production-cdn-pxl/media/umassdartmouth/profiles/engineering/MASOUMI-51.jpg?text=945+WebP",
   },
   {
     testimonial:
-      "After Gavin developed and deployed the mobile app for our product, our usebase increased by 300% in the next quarter. We can't thank them enough!",
+      "After Gavin developed and deployed the mobile app for our product, our usebase increased by 300% in the next quarter. We can't thank him enough!",
     name: "Neil D'sousa",
     designation: "Founder",
     company: "GetSetUp.io",
-    image:
-      "https://media.licdn.com/dms/image/C4D03AQHKaKNnEid8HQ/profile-displayphoto-shrink_800_800/0/1646771131470?e=1684368000&v=beta&t=rCpELKC1h-fuCwTej6EYEBFHQi81lpD1ckm-mIVTnz0",
   },
   {
     testimonial:
@@ -261,8 +260,6 @@ const testimonials: Testimony[] = [
     name: "Deepak Singh",
     designation: "Engineering Lead",
     company: "Zaya Learning Labs",
-    image:
-      "https://media.licdn.com/dms/image/C4E03AQFr0n_lCTfvlA/profile-displayphoto-shrink_800_800/0/1623920643479?e=1684368000&v=beta&t=n2PnFs51fAM_K2muYptVo0cprzRkenfRz6mkaoZp0C4",
   },
 ];
 

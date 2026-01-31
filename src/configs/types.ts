@@ -60,5 +60,4 @@ export interface Testimony {
   name: string;
   designation: string;
   company: string;
-  image: string;
 }
