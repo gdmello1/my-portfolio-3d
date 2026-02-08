@@ -3,7 +3,9 @@ export interface User {
   first_name: string;
   last_name: string;
   portfolio_primary_title: string;
+  portfolio_middle_title: string;
   portfolio_secondary_title: string;
+
   about_me_slogan?: string;
   about_me_description?: string;
 }

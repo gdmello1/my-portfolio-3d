@@ -64,7 +64,8 @@ const user: User = {
   first_name: "Gavin",
   last_name: "D'mello",
   portfolio_primary_title: "Gavin",
-  portfolio_secondary_title: "Edwin   D'mello",
+  portfolio_middle_title: "Edwin",
+  portfolio_secondary_title: "D'Mello",
   about_me_slogan:
     "I develop highly responsive full-stack web and mobile aplications",
   about_me_description:
