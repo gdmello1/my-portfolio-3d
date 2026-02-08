@@ -68,7 +68,7 @@ const user: User = {
   about_me_slogan:
     "I develop highly responsive full-stack web and mobile aplications",
   about_me_description:
-    "Full-Stack Software Engineer with 5+ years of experience building and scaling production systems that don’t fall apart under real-world load. My arsenal includes JavaScript, TypeScript, Python, and Java, with hands-on experience designing backend-heavy architectures, APIs, data pipelines, and modern web applications using Node.js, NestJS, React, and Angular. I’m known for untangling complex systems, modernizing legacy codebases, and taking strong ownership from design to production, with a constant focus on reliability, maintainability, and scale. I thrive in fast-paced environments, think in systems, and continuously push myself toward stronger architecture and distributed systems mastery.",
+    "Full-Stack Software Engineer with 5 years of experience building and scaling production systems that don’t fall apart under real-world load. My arsenal includes JavaScript, TypeScript, Python, and Java, with hands-on experience designing backend-heavy architectures, APIs, data pipelines, and modern web applications using Node.js, NestJS, React, and Angular. I’m known for untangling complex systems, modernizing legacy codebases, and taking strong ownership from design to production, with a constant focus on reliability, maintainability, and scale. I thrive in fast-paced environments, think in systems, and continuously push myself toward stronger architecture and distributed systems mastery.",
 };
 
 const services: Service[] = [
@@ -154,10 +154,11 @@ const experiences: Experience[] = [
     iconBg: "#F8FDFF",
     date: "Apr 2024 - Present",
     points: [
-      "Architected a unified Benchling database integrating data from 16 legacy systems using Node.js and AWS services, collaborating across teams to establish data governance and ensure cross-department data consistency.",
-      "Established automated data migration and two-way synchronization pipelines using Sequelize migrations, cron jobs, and Benchling APIs to transition 4.8M records from legacy systems into a unified Benchling database.",
-      "Developed a Benchling API proxy using Python and FastAPI to enable legacy systems to perform CRUD operations and access data created directly through the Benchling UI.",
-      "Built a network abstraction layer to dynamically redirect traffic from deprecated legacy applications to the Benchling API layer, eliminating cross-VPC connectors and reducing integration overhead by 90% across 60+ applications.",
+      "Enabled zero-downtime adoption and data consistency by building automated migration and bi-directional sync pipelines for 5 million records across 16 legacy systems using Node.js, Sequelize, cron jobs, and REST APIs.",
+      "Accelerated platform adoption while minimizing refactor risk by developing a Python/FastAPI abstraction layer that allowed legacy services to perform CRUD operations against the new platform without direct dependency changes.",
+      "Reduced migration coordination overhead by 90% by designing a network-level abstraction and traffic-routing layer that preserved backward compatibility for 60+ internal services during phased legacy deprecation.",
+      "Streamlined scientist workflows and eliminated data ambiguity by leading cross-team domain modeling to unify fragmented schemas and workflows across 16 legacy applications into a single internal data platform.",
+      "Increased system reliability and incident detection by 40% by building observability dashboards using SQL, Dynatrace, and CloudWatch logs, identifying bottlenecks across APIs, databases, and infrastructure.",
     ],
     tech: "TypeScript · React · Angular · NestJS · Sequelize · AWS (EC2, ECS, Lambda, S3, SNS, SQS, Event-Bridge, etc.)",
     url: "https://www.modernatx.com/en-US",
@@ -169,11 +170,9 @@ const experiences: Experience[] = [
     iconBg: "#F8FDFF",
     date: "Jul 2023 - Apr 2024",
     points: [
-      "Revamped CI/CD workflows using GitHub Actions, reducing PR cycle time by 68% and boosting release cadence.",
-      "Generated Dynatrace dashboards using SQL to visualize performance bottlenecks, improving system response time and reducing incident detection time by 40%.",
-      "Introduced and set up Jest for unit testing across team-owned services, establishing standardized test practices and improving unit test coverage and code quality.",
-      "Implemented Cypress integration and end-to-end tests for Angular and Node.js applications using Platform team tooling, increasing overall test coverage by over 85% and improving release reliability.",
-      "Authored API documentation, developer guides, and onboarding materials with Swagger and Readme, improving new engineer ramp-up efficiency by 50%.",
+      "Reduced pull-request cycle time by 68% by redesigning CI/CD workflows using GitHub Actions, introducing caching, parallel execution, and streamlined deployments to AWS ECS.",
+      "Increased release reliability and reduced production bugs by introducing Jest (unit/integration) and Cypress (E2E) testing across Node.js and Angular applications, raising test coverage to 85%+.",
+      "Accelerated engineer onboarding by 50% by authoring standardized API documentation and developer guides using Swagger and ReadMe, reducing reliance on tribal knowledge.",
     ],
     tech: "TypeScript · Angular · Express.js · Postgres · Prisma · GitHub Actions · Jenkins · AWS · Docker · Redis · ElasticSearch",
     url: "https://www.modernatx.com/en-US",
