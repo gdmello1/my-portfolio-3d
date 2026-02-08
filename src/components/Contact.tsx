@@ -43,12 +43,12 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Gavin D'mello",
+          to_name: "Gavin Edwin D'Mello",
           from_email: form.email,
-          to_email: "gavindmello1997@gmail.com",
+          to_email: "gavinedwindmello@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       )
       .then(
         () => {
@@ -66,7 +66,7 @@ const Contact = () => {
           console.error(error);
 
           alert("Ahh, something went wrong. Please try again.");
-        }
+        },
       );
   };
 
