@@ -51,7 +51,7 @@ const Navbar = () => {
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             {user.portfolio_primary_title} &nbsp;
             <span className="sm:block hidden">
-              {user.portfolio_middle_title} &nbsp;{" "}
+              {user.portfolio_middle_title} &nbsp;
               {user.portfolio_secondary_title}
             </span>
           </p>
